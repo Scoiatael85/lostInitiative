@@ -1,0 +1,65 @@
+body {
+ max-width: 800px;
+ margin-left: auto;
+ margin-right: auto;
+}
+header {
+	margin-bottom: 25px;
+}
+a {
+	color: gold;
+}
+a:hover { 
+    color: #670000;
+}
+.redHead {
+	background-color: #670000;
+}
+.gold {
+	color: gold;
+	font-size: 4vw;
+}
+.logo1 {
+	position: absolute;
+	left: 14%;
+}
+.logo2 {
+	position: absolute;
+	right: 14%;
+}
+.Box {
+	background-color: grey;
+	border: 2px solid red;
+	height: 300px;
+}
+.feed {
+	margin-left: 8%;
+	margin-right: 8%
+}
+#EoM {
+	background-image: url("../img/EoM_Banner.png");
+}
+#tF {
+	background-image: url("../img/tF_Banner.png");
+}
+.banner {
+	max-width: 380px;
+	max-height: 75px;
+	background: no-repeat; 
+}
+@media (max-width: 750px) {
+	.gold {
+		font-size: 3.5vw;
+	}
+	.logo1, .logo2{
+		width: 72px;
+	}
+}
+@media (max-width: 425px) {
+	.gold {
+		font-size: 3.2vw;
+	}
+	.logo1, .logo2{
+		width: 54px;
+	}
+}
