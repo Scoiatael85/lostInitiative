@@ -1,7 +1,6 @@
 body {
- max-width: 800px;
- margin-left: auto;
- margin-right: auto;
+ background: url("../img/2507.jpg");
+ background-size: cover;
 }
 header {
 	margin-bottom: 25px;
@@ -12,9 +11,9 @@ a {
 a:hover { 
     color: #670000;
 }
-.redHead {
+/*.redHead {
 	background-color: #670000;
-}
+}*/
 .gold {
 	color: gold;
 	font-size: 4vw;
@@ -30,7 +29,9 @@ a:hover {
 .Box {
 	background-color: grey;
 	border: 2px solid red;
+	padding: 0;
 	height: 300px;
+	overflow-y: scroll;
 }
 .feed {
 	margin-left: 8%;
@@ -46,6 +47,14 @@ a:hover {
 	max-width: 380px;
 	max-height: 75px;
 	background: no-repeat; 
+}
+.mover {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: fixed;
+  opacity: .4;
+  z-index: -1;
+
 }
 @media (max-width: 750px) {
 	.gold {
