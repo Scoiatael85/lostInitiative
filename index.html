@@ -17,6 +17,7 @@
 
 <body>
   <div class="container">
+    <iframe id="streamTest" src="http://streambadge.com/twitch/lostinitiativeshow/" style="opacity: .8;"></iframe>
     <div id="header" class="row redHead">
       <div class="col-md-12">
         <img class="logo1" src="img/LI_Banner.png">
@@ -140,9 +141,28 @@
       </div>
     </div>
     <hr>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        
+        <div class="streamBox col-md-9 col-sm-9 col-xs-9">
+          <iframe
+            id="live_embed_player_flash"
+            src="http://player.twitch.tv/?channel=lostinitiativeshow&autoplay=false"
+            frameborder="<frameborder>"
+            scrolling="no"
+            allowfullscreen="true">
+          </iframe>
+        </div>
+        <div class="streamBox col-md-3 col-sm-3 col-xs-3">    
+          <iframe frameborder="0" scrolling="no" src="http://twitch.tv/lostinitiativeshow/chat?popout=" id="chat">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
 
   <footer class="redHead">  
-    <p class="gold">Contact Us</p>
+    <p class="gold">Contact Us</p></br></br>
   </footer>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

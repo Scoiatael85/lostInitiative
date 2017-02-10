@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
   var height = self.innerHeight;
-  console.log(height);
   var numberOfPizzas = height / s * cols;
   // reduced the number of .movers to the total you can see on screen
   for (var i = 0; i < numberOfPizzas; i++) {
