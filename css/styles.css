@@ -27,10 +27,11 @@ a:hover {
 	right: 14%;
 }
 .Box {
-	background-color: grey;
-	border: 2px solid red;
+	/*background-color: grey;*/
+	/*border: 2px solid red;*/
+	margin: 3%;
 	padding: 0;
-	height: 300px;
+	height: 400px;
 	overflow-y: scroll;
 }
 .feed {
@@ -44,18 +45,43 @@ a:hover {
 	background-image: url("../img/tF_Banner.png");
 }
 .banner {
-	max-width: 380px;
-	max-height: 75px;
-	background: no-repeat; 
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+	/*background: no-repeat; */
 }
 .mover {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: fixed;
   opacity: .4;
-  z-index: -1;
+  z-index: -2;
 
 }
+  .carousel-inner,
+  .carousel-inner > .item {
+  	height: 300px;
+  }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      max-width: 50%;
+      margin: auto;
+  }
+  .carousel-inner > .item > div > p {
+  	color: gold;
+  	margin-bottom: 0;
+  }
+  .carousel-inner > .item > div > p > span{
+  	font-weight: bold;
+  	color: #670000;
+  }
+.rembeddit {
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
 @media (max-width: 750px) {
 	.gold {
 		font-size: 3.5vw;

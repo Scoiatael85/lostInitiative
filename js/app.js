@@ -18,7 +18,6 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // Moves the sliding background pizzas based on scroll position
 function updatePositions() {
   frame++;
-  window.performance.mark("mark_start_frame");
   // called the .movers by class as opposed to an allselector
   var items = document.getElementsByClassName('mover');
   // pulled the meat of the math out of the loop to avoid redundancies
@@ -28,7 +27,7 @@ function updatePositions() {
     var phase = [];
   
     for (var g = 3; g--;) {
-      phase.push(Math.sin(sin + g) * 100);
+      phase.push(Math.sin(sin + g) * 1125.2);
     }
 
     for (var i = items.length; i--;) {
@@ -38,15 +37,6 @@ function updatePositions() {
         items[i].style.transform = "translateX("+shift+") translateZ(0)";
               // console.log('shift = ', shift);
     }
-
-  // User Timing API to the rescue again. Seriously, it's worth learning.
-  // Super easy to create custom metrics.
-  window.performance.mark("mark_end_frame");
-  window.performance.measure("measure_frame_duration", "mark_start_frame", "mark_end_frame");
-  if (frame % 10 === 0) {
-    var timesToUpdatePosition = window.performance.getEntriesByName("measure_frame_duration");
-    logAverageFrame(timesToUpdatePosition);
-  }
 }
 
 // runs updatePositions on scroll
@@ -70,9 +60,36 @@ document.addEventListener('DOMContentLoaded', function() {
     // Made the image smaller to not waste load time
     elem.src = "img/d20.png";
     // recentered the 18 .movers after i optimized the code
-    elem.basicLeft = 800 - (i % cols) * s;
+    elem.basicLeft = 950 - (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     document.querySelector("#movingPizzas1").appendChild(elem);
   }
   updatePositions();
+});
+
+$(document).ready(function(){
+    // Activate Carousel
+    $("#myCarousel").carousel({interval: 2000});
+    
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+        $("#myCarousel").carousel(0);
+    });
+    $(".item2").click(function(){
+        $("#myCarousel").carousel(1);
+    });
+    $(".item3").click(function(){
+        $("#myCarousel").carousel(2);
+    });
+    $(".item4").click(function(){
+        $("#myCarousel").carousel(3);
+    });
+    
+    // Enable Carousel Controls
+    $(".left").click(function(){
+        $("#myCarousel").carousel("prev");
+    });
+    $(".right").click(function(){
+        $("#myCarousel").carousel("next");
+    });
 });
