@@ -1,6 +1,10 @@
 body {
- background: url("../img/2507.jpg");
- background-size: cover;
+ background: url("../img/stone2-min.jpg");
+ /*background-size: cover;*/
+
+}
+h3, p {
+  color: white;
 }
 header {
 	margin-bottom: 25px;
@@ -98,6 +102,40 @@ a:hover {
 .streamBox {
 	/*display: none;*/
 }
+  body .contactme {
+    height: 150px;
+    color: gold; }
+    @media (max-width: 600px) {
+      body .contactme {
+        height: 250px; } }
+    body .contactme .contactInfo {
+      padding-top: 35px;
+      float: left;
+      font-size: 1.5em; }
+      body .contactme .contactInfo .floatbox {
+        margin: auto;
+        display: block;
+        width: 150px; }
+        body .contactme .contactInfo .floatbox a {
+          line-height: 38px;
+          margin-left: 10px;
+          float: left;
+          color: #670000;
+          text-decoration: none; }
+        body .contactme .contactInfo .floatbox span {
+          float: left;
+          clear: both; }
+          body .contactme .contactInfo .floatbox span .material-icons {
+            font-size: 34px; }
+  body .social {
+    padding-top: 25px;
+    float: left; }
+    body .social .icons {
+      display: block;
+      width: 170px;
+      margin: auto; }
+
+
 
 @media (max-width: 750px) {
 	.gold {
