@@ -51,39 +51,42 @@ var game = {
   ],
   "playersTF" : [
       {   
-    pc: "@BaerTaffy",
-    name: "Baer",
-    profilePic: "img/min/BaerTaffy.png", 
-    twitter: "https://twitter.com/BaerTaffy",
-    charNickname: "Ado",
-    charName: "Adotumal Milltall",
-    charImg: "img/min/Ado.png",
-    charRace: "Halfling",
-    charClass: "Bard",
-    id: "TF0"
-    },
-    {   
-    pc: "@Strippin",
-    name: "Sam",
-    profilePic: "img/min/Strippin.jpg", 
-    twitter: "https://twitter.com/Strippin",
-    charNickname: "Rye",
-    charName: "Rye",
-    charImg: "img/min/Rye.png",
-    charRace: "Tiefling",
-    charClass: "Warlock",
-    id: "TF1"
-    },
-    {   
     pc: "@MargaretKrohn",
     name: "Maggie",
     profilePic: "img/min/MargaretKrohn.jpg", 
     twitter: "https://twitter.com/MargaretKrohn",
-    charNickname: "Gromon",
-    charName: "Gromon",
-    charImg: "img/min/Gromon.png",
-    charRace: "Half-orc",
-    charClass: "Barbarian",
+    charNickname: "Neereem",
+    charName: "Neereem Dinura",
+    charImg: "img/min/Neereem.png",
+    charRace: "Bothan",
+    charClass: "Colonist",
+    charTree: "Politico",
+    id: "TF0"
+    },
+    {   
+    pc: "@JesseCox",
+    name: "Jesse",
+    profilePic: "img/min/JesseCox.jpg", 
+    twitter: "https://twitter.com/JesseCox",
+    charNickname: "Wirbo",
+    charName: "Wirbochuhr",
+    charImg: "img/min/Wirbo.png",
+    charRace: "Wookiee",
+    charClass: "Hired Gun",
+    charTree: "Mercenary",
+    id: "TF1"
+    },
+    {   
+    pc: "@crendor",
+    name: "crendor",
+    profilePic: "img/min/crendor.png", 
+    twitter: "https://twitter.com/crendor",
+    charNickname: "420",
+    charName: "420-n0-sc0p3",
+    charImg: "img/min/420.png",
+    charRace: "B-1 Battle Droid",
+    charClass: "Bounty Hunter",
+    charTree: "Assassian",
     id: "TF2"
     },
     {   
@@ -91,11 +94,12 @@ var game = {
     name: "Mathas",
     profilePic: "img/min/MathasGames.jpg", 
     twitter: "https://twitter.com/MathasGames",
-    charNickname: "Thonk",
+    charNickname: "Fitz",
     charName: "Thonk",
-    charImg: "img/min/Thonk.png",
-    charRace: "Half-orc",
-    charClass: "Cleric",
+    charImg: "img/min/Fitz.png",
+    charRace: "Human",
+    charClass: "Technician",
+    charTree: "Mechanic",
     id: "TF3"
     }
   ]
@@ -161,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var elem = document.createElement('img');
     elem.className = 'mover';
     // Made the image smaller to not waste load time
-    elem.src = "img/d20.png";
+    elem.src = "img/min/d20.png";
     // recentered the 18 .movers after i optimized the code
     elem.basicLeft = 950 - (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
@@ -196,7 +200,7 @@ $(document).ready(function(){
                       game.playersTF[i].twitter + '">' + game.playersTF[i].pc 
                       + '</a></p></div>' + '<div class="col-md-6"><img src="' + game.playersTF[i].charImg + '" alt="' + game.playersTF[i].charNickname +
                       '"><p><span>Name:</span> ' + game.playersTF[i].charName + '</p><p><span>Race:</span> ' + game.playersTF[i].charRace + 
-                      '</p><p><span>Class:</span> ' + game.playersTF[i].charClass + '</p></div></div>'
+                      '</p><p><span>Class:</span> ' + game.playersTF[i].charClass + '</p><p><span>Specialization:</span> ' + game.playersTF[i].charTree + '</p></div></div>'
       game2Meat.append(wheel2Item);
     };
 
@@ -234,3 +238,6 @@ $(document).ready(function(){
         $("#game2Wheel").carousel(3);
     });
 });
+    // $('.reddit-header').find('img').attr('src', 'img/min/LI_Reddit.png');
+    $('.reddit-header').children('h4').html('');
+
