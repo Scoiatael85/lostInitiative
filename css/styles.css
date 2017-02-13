@@ -1,12 +1,7 @@
+/*Whole site*/
+
 body {
     background: url("../img/stone2-min.jpg");
-    /*background-size: cover;*/
-}
-h1 {
-    color: gold;
-    font-size: 4vw;
-    font-family: 'Walter Turncoat', cursive;
-    font-weight: bolder;
 }
 h3 {
     color: #960303;
@@ -25,8 +20,26 @@ a {
 a:hover {
     color: #960303;
 }
+/*all banners, logos, dice*/
+
+.banner {
+    max-width: 90%;
+}
+.bannerMobile {
+    display: none;
+}
 .logo {
     position: absolute;
+}
+@media (max-width: 750px) {
+    .logo {
+        width: 72px;
+    }
+}
+@media (max-width: 425px) {
+    .logo {
+        width: 54px;
+    }
 }
 .logoLeft {
     left: 14%;
@@ -37,45 +50,6 @@ a:hover {
 .centerLogo {
     max-width: 40%;
 }
-.headBox {
-    min-height: 60px;
-}
-.Box {
-    margin: 3%;
-    padding: 0;
-    height: 400px;
-}
-.feed {
-    overflow-y: scroll;
-    height: 100%;
-}
-.twitter,
-.reddit {
-    margin-left: 8%;
-    margin-right: 8%;
-}
-/*.contactInfo {
-    margin-left: 12%;
-    margin-right: 2%;
-}
-.social {
-    margin-left: 2%;
-    margin-right: 12%;
-}*/
-#EoM {
-    background-image: url("../img/EoM_Banner.png");
-}
-#tF {
-    background-image: url("../img/LostInitSWWait.png");
-}
-.banner {
-    opacity: 0.6;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    /*background: no-repeat; */
-}
 .mover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -83,6 +57,49 @@ a:hover {
     opacity: .3;
     z-index: -2;
 }
+/*different boxes and thier filling*/
+
+.box {
+    margin: 4%;
+    padding: 0;
+    height: 400px;
+}
+.showBox {
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#EoM {
+    background: url("../img/min/EoM_Banner.png");
+    background-size: cover;
+}
+#tF {
+    background: url("../img/min/tF_Banner.png") center;
+    background-size: cover;
+}
+.PC {
+    max-width: 80%;
+}
+.feed {
+    overflow-y: scroll;
+    height: 100%;
+}
+.feedCenter {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.feedButton {
+    right: 0;
+    top: -25px;
+    position: absolute;
+}
+.headBox {
+    min-height: 60px;
+}
+/*Bootstrap Carousel*/
+
 .carousel-inner,
 .carousel-inner > .item {
     height: 310px;
@@ -98,8 +115,67 @@ a:hover {
 }
 .carousel-inner > .item > div > p > span {
     font-weight: bold;
-    color: #960303;
+    color: #CCD6DD;
 }
+/*twitch stream style*/
+
+.twitch {
+    /*background-color: black;*/
+    max-width: 100%;
+    position: relative;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    margin-bottom: 15px;
+}
+@media (min-width: 992px) {    
+    .twitchChat {
+        padding-bottom: 117.22%;
+    }
+}    
+.twitch #live_embed_player_flash, #chat {
+    width: 80vw;
+    height: calc(80vw * .5625);
+}
+@media (min-width: 865px) {
+    .twitch #live_embed_player_flash, #chat {    
+        width: 70vw;
+        height: calc(70vw * .5625);
+    }
+}
+@media (min-width: 992px) {
+    .twitch #live_embed_player_flash, #chat {    
+        width: 54vw;
+        height: calc(54vw * .5625);
+    }
+}
+@media (min-width: 1100px) {
+    .twitch #live_embed_player_flash, #chat {    
+        width: 52vw;
+        height: calc(52vw * .5625);
+    }
+}
+@media (min-width: 1160px){
+    .twitch #live_embed_player_flash, #chat {    
+        width: 50vw;
+        height: calc(50vw * .5625);
+    }
+}
+.twitch #chat {
+    width: 100%;
+}
+#checkLive {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    border: none;
+    width: 100%;
+    height: 64px;
+}
+/*reddit feed style*/
+
 .rembeddit {
     background-color: transparent !important;
     border: 0 !important;
@@ -113,117 +189,75 @@ a:hover {
 .reddit-link-title:hover {
     color: gold !important;
 }
-.score {
-    /*background-color: #670000 !important;*/
-    
-    color: gold !important;
-}
 .reddit-comment-link {
     color: #CCD6DD !important;
 }
 .reddit-entry:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
-#live_embed_player_flash,
-#chat {
-    width: 100%;
-    height: 460px;
-    display: inline-block;
+.score {
+    color: gold !important;
 }
-#streamTest {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    bottom: 0;
-    border: none;
-    width: 100%;
-    height: 64px;
+/*twitter feed style*/
+
+.TweetAuthor-name {
+    color: gold;
 }
-.bannerMobile {
-    display: none;
- } 
- .lineUp {
-    margin-bottom: 4px;
- }
-body .contactme {
+/*footer styles*/
+
+.contactme {
     height: 150px;
     color: gold;
 }
 @media (max-width: 600px) {
-    body .contactme {
+    .contactme {
         height: 250px;
     }
 }
-body .contactme .contactInfo {
+.contactInfo {
     padding-top: 35px;
     float: left;
     font-size: 1.5em;
 }
-body .contactme .contactInfo .floatbox {
+.floatbox {
     margin: auto;
     display: block;
     width: 150px;
-    /*float: right;*/
 }
-body .contactme .contactInfo .floatbox a {
+.floatbox a {
     line-height: 38px;
+    margin-top: 5px;
     margin-left: 10px;
     float: left;
     color: #960303 !important;
     text-decoration: none;
+    font-weight: bold;
 }
-body .contactme .contactInfo .floatbox span {
+.floatbox span {
     float: left;
     clear: both;
 }
-body .contactme .contactInfo .floatbox span .material-icons {
-    font-size: 34px;
+.material-icons {
+    font-size: 50px;
 }
-body .social {
+.social {
     padding-top: 25px;
     float: left;
 }
-body .social .icons {
+.icons {
     display: block;
     width: 100%;
     margin: auto;
 }
-body .social .icons a {
-margin-left: 2%;
-margin-right: 2%;
+.icons a {
+    margin-left: 2%;
+    margin-right: 2%;
 }
-@media (min-width: 1450px) {
-    h1 {
-        font-size: 60px;
-    }
-}
-@media (max-width: 750px) {
-    h1 {
-        font-size: 3.5vw;
-    }
-    .logo {
-        width: 72px;
+@media (max-width: 767px) {
+    .otherLinks {
+        width: 55px;
     }
 }
-@media (max-width: 425px) {
-    h1 {
-        font-size: 3.2vw;
-    }
-    .logo {
-        width: 54px;
-    }
-}
-.TweetAuthor-name {
-    color: gold;
-}
-    @media (max-width: 767px) {
-        .contactInfo, .social {
-            float: right;
-        }
-        .
-    }
-
-
-
-
-
+/*.lineUp {
+    margin-bottom: 4px;
+ }
