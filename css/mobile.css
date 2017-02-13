@@ -42,6 +42,19 @@ p {
 }
 /*all banners, logos, dice*/
 
+.toggle {
+    display: inherit;
+}
+@media (orientation: landscape) {
+    .toggle {
+        left: 33%;
+    }
+}
+@media (orientation: portrait) {
+    .toggle {
+        left: 25%;
+    }
+}
 .box {
     height: 515px;
 }
@@ -73,42 +86,46 @@ p {
     height: calc(81vw * .5625);
 }
 @media (min-width: 360px) {
-    .twitch #live_embed_player_flash {    
+    .twitch #live_embed_player_flash {
         width: 84vw;
         height: calc(84vw * .5625);
     }
 }
 @media (min-width: 400px) {
-    .twitch #live_embed_player_flash {    
+    .twitch #live_embed_player_flash {
         width: 86vw;
         height: calc(86vw * .5625);
     }
 }
 @media (min-width: 500px) {
-    .twitch #live_embed_player_flash {    
+    .twitch #live_embed_player_flash {
         width: 90vw;
         height: calc(90vw * .5625);
     }
 }
 @media (min-width: 600px) {
-    .twitch #live_embed_player_flash {    
+    .twitch #live_embed_player_flash {
         width: 91vw;
         height: calc(91vw * .5625);
     }
 }
-
 #chat {
     height: 110vw;
 }
 @media (orientation: landscape) {
     .twitchChat {
-    padding-bottom: 55vw;
+        padding-bottom: 55vw;
     }
     #chat {
-    height: 55vw;
+        height: 55vw;
     }
 }
 @media (orientation: portrait) {
     .twitchChat {
-    padding-bottom: 110vw;
+        padding-bottom: 110vw;
+    }
+    @media (min-width: 350px) {
+        .contactInfo {
+            font-size: 1.1em;
+        }
     }

@@ -172,12 +172,12 @@ $('.reddit-header').children('h4').html('');
 
 $('#bannerShow').click(function() {
     if ($(window).width() < 770) {
-        $('#show1, #show2').toggle(); 
+        $('#show1, #show2').toggle();
     }
 });
 $('#bannerTwitch').click(function() {
     if ($(window).width() < 770) {
-        $('.twitch').toggle(); 
+        $('.twitch').toggle();
     }
 });
 $('#bannerTwitter').click(function() {
@@ -185,7 +185,7 @@ $('#bannerTwitter').click(function() {
     $('#twitterBox').css('height', '100%');
 });
 $('#bannerReddit').click(function() {
-    $('#feedReddit').toggle(); 
+    $('#feedReddit').toggle();
     $('#redditBox').css('height', '100%');
 });
 

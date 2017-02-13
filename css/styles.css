@@ -50,6 +50,15 @@ a:hover {
 .centerLogo {
     max-width: 40%;
 }
+.flex {
+    display: flex;
+}
+.toggle {
+    color: #CCD6DD;
+    position: absolute;
+    top: 0;
+    display: none;
+}
 .mover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -81,6 +90,9 @@ a:hover {
 }
 .PC {
     max-width: 80%;
+}
+#players {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .feed {
     overflow-y: scroll;
@@ -120,7 +132,6 @@ a:hover {
 /*twitch stream style*/
 
 .twitch {
-    /*background-color: black;*/
     max-width: 100%;
     position: relative;
     display: block;
@@ -129,37 +140,44 @@ a:hover {
     padding-bottom: 56.25%;
     margin-bottom: 15px;
 }
-@media (min-width: 992px) {    
+@media (min-width: 992px) {
     .twitchChat {
         padding-bottom: 117.22%;
     }
-}    
-.twitch #live_embed_player_flash, #chat {
+}
+.twitch #live_embed_player_flash,
+#chat {
     width: 80vw;
     height: calc(80vw * .5625);
 }
 @media (min-width: 865px) {
-    .twitch #live_embed_player_flash, #chat {    
+    .twitch #live_embed_player_flash,
+    #chat {
         width: 70vw;
         height: calc(70vw * .5625);
     }
 }
 @media (min-width: 992px) {
-    .twitch #live_embed_player_flash, #chat {    
+    .twitch #live_embed_player_flash,
+    #chat {
         width: 54vw;
         height: calc(54vw * .5625);
     }
 }
 @media (min-width: 1100px) {
-    .twitch #live_embed_player_flash, #chat {    
+    .twitch #live_embed_player_flash,
+    #chat {
         width: 52vw;
         height: calc(52vw * .5625);
     }
 }
-@media (min-width: 1160px){
-    .twitch #live_embed_player_flash, #chat {    
+@media (min-width: 1160px) {
+    .twitch #live_embed_player_flash,
+    #chat {
         width: 50vw;
         height: calc(50vw * .5625);
+        max-width: 730px;
+        max-height: 410px;
     }
 }
 .twitch #chat {
@@ -222,20 +240,15 @@ a:hover {
 .floatbox {
     margin: auto;
     display: block;
-    width: 150px;
+    width: 100%;
 }
 .floatbox a {
     line-height: 38px;
     margin-top: 5px;
     margin-left: 10px;
-    float: left;
     color: #960303 !important;
     text-decoration: none;
     font-weight: bold;
-}
-.floatbox span {
-    float: left;
-    clear: both;
 }
 .material-icons {
     font-size: 50px;
@@ -258,6 +271,3 @@ a:hover {
         width: 55px;
     }
 }
-/*.lineUp {
-    margin-bottom: 4px;
- }
