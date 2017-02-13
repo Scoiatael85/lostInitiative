@@ -171,10 +171,14 @@ $(document).ready(function() {
 $('.reddit-header').children('h4').html('');
 
 $('#bannerShow').click(function() {
-    $('#show1, #show2').toggle(); 
+    if ($(window).width() < 770) {
+        $('#show1, #show2').toggle(); 
+    }
 });
 $('#bannerTwitch').click(function() {
-    $('.twitch').toggle(); 
+    if ($(window).width() < 770) {
+        $('.twitch').toggle(); 
+    }
 });
 $('#bannerTwitter').click(function() {
     $('#feedTwitter').toggle();
