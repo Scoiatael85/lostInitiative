@@ -172,21 +172,33 @@ $('.reddit-header').children('h4').html('');
 
 $('#bannerShow').click(function() {
     if ($(window).width() < 770) {
-        $('#show1, #show2').toggle();
+        $('#show1, #show2').slideToggle();
     }
 });
 $('#bannerTwitch').click(function() {
     if ($(window).width() < 770) {
-        $('.twitch').toggle();
+        $('.twitch').slideToggle();
     }
 });
 $('#bannerTwitter').click(function() {
-    $('#feedTwitter').toggle();
-    $('#twitterBox').css('height', '100%');
+    $('#feedTwitter').slideToggle();
+        if ($("#twitterBox").height() == 438) {
+           $("#twitterBox").animate(
+               {height: "98px"});
+           }
+        else if ($("#twitterBox").height() == 21) {
+           $("#twitterBox").animate({height: "515"});
+           }
 });
 $('#bannerReddit').click(function() {
-    $('#feedReddit').toggle();
-    $('#redditBox').css('height', '100%');
+    $('#feedReddit').slideToggle();
+        if ($("#redditBox").height() == 438) {
+           $("#redditBox").animate(
+               {height: "98px"});
+           }
+        else if ($("#redditBox").height() == 21) {
+           $("#redditBox").animate({height: "515px"});
+           }
 });
 
 // Iterator for number of times the d20 in the background have scrolled.

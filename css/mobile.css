@@ -47,12 +47,12 @@ p {
 }
 @media (orientation: landscape) {
     .toggle {
-        left: 33%;
+        right: 28%;
     }
 }
 @media (orientation: portrait) {
     .toggle {
-        left: 25%;
+        right: 12%;
     }
 }
 .box {

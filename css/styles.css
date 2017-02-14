@@ -56,7 +56,7 @@ a:hover {
 .toggle {
     color: #CCD6DD;
     position: absolute;
-    top: 0;
+    top: 55px;
     display: none;
 }
 .mover {
