@@ -232,10 +232,8 @@ a:hover {
     height: 150px;
     color: gold;
 }
-@media (max-width: 600px) {
-    .contactme {
-        height: 250px;
-    }
+.webLinks {
+    height: 0;
 }
 .contactInfo {
     padding-top: 35px;
@@ -274,5 +272,70 @@ a:hover {
 @media (max-width: 767px) {
     .otherLinks {
         width: 55px;
+    }
+}
+#scottHead, #mathasHead {
+    z-index: 10;
+}
+#mathasLinks, #daelricLinks, .mathasBox, .scottBox {
+    background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+    repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+    repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+    display: none;
+}
+#mathasLinks, #daelricLinks {
+    padding-bottom: 28%;
+}
+@media (min-width: 600px) {
+    #mathasLinks, #daelricLinks {
+    padding-bottom: 24%;
+    }
+}
+@media (min-width: 650px) {
+    #mathasLinks, #daelricLinks {
+    padding-bottom: 23%;
+    }
+}
+@media (min-width: 700px) {
+    #mathasLinks, #daelricLinks {
+    padding-bottom: 21%;
+    }
+}
+@media (min-width: 750px) {
+    #mathasLinks, #daelricLinks {
+    padding-bottom: 20%;
+    }
+}
+@media (min-width: 992px) {
+    #mathasLinks, #daelricLinks {
+    padding-bottom: 16%;
+    }
+}
+@media (min-width: 1200px) {
+    #mathasLinks, #daelricLinks {
+    padding-bottom: 13%;
+    }
+}
+#daelricLinks, .scottBox {
+    background-color: rgba(70,0,130,.6);
+}
+#mathasLinks, .mathasBox {
+    background-color: rgba(139,0,0,.6)
+}
+.linksTitle {
+    position: relative;
+    top: -25px;
+    font-size: 16px;
+    margin-bottom: 0;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+@media (min-width: 350px) {
+    .linksTitle {
+        font-size: 20px;    
+    }
+}
+@media (min-width: 370px) {
+    .linksTitle {
+        font-size: 22px;    
     }
 }

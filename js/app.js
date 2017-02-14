@@ -103,6 +103,9 @@ var game = {
     ]
 };
 
+var mathasTwitter = '<div class="feedButton"><a href="https://twitter.com/intent/tweet?text=@MathasGames" class="twitter-share-button"></a><a href="https://twitter.com/MathasGames" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false"></a></div><div id="feedTwitter" class="feed"><a class="twitter-timeline" href="https://twitter.com/MathasGames" data-theme="dark" data-show-replies="true" data-link-color="#FFD700" data-chrome="noheader nofooter noborders transparent">Tweets by MathasGames</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>';
+var daelricTwitter = '<div class="feedButton"><a href="https://twitter.com/intent/tweet?text=@daelric" class="twitter-share-button"></a><a href="https://twitter.com/daelric" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false"></a></div><div id="feedTwitter" class="feed"><a class="twitter-timeline" href="https://twitter.com/daelric" data-theme="dark" data-show-replies="true" data-link-color="#FFD700" data-chrome="noheader nofooter noborders transparent">Tweets by Daelric</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>';
+
 $(document).ready(function() {
     var game1Wheel = $('#game1Wheel');
     var game2Wheel = $('#game2Wheel');
@@ -200,6 +203,30 @@ $('#bannerReddit').click(function() {
            $("#redditBox").animate({height: "515px"});
            }
 });
+$('#mathasHead').click(function() {
+    $('#mathasLinks').toggle();
+    $('.mathasBox').toggle();
+    $('#liLinks').hide();
+    $('#twitterBox, #redditBox').hide();
+    $('#daelricLinks').hide();
+    $('.scottBox').hide();
+    if ($('#mathasLinks').css('display') == 'none') {
+     $('#liLinks').toggle();
+     $('#twitterBox, #redditBox').toggle();
+    }
+    if ($('#mathasTwitter').html().length == 0) {
+        $('#mathasTwitter').append(mathasTwitter);
+    }
+})
+
+$('#scottHead').click(function() {
+    $('#daelricLinks').toggle();
+    $('#liLinks').hide();
+    $('#mathasLinks').hide();
+    if ($('#daelricLinks').css('display') == 'none') {
+     $('#liLinks').toggle();
+    }
+})
 
 // Iterator for number of times the d20 in the background have scrolled.
 var frame = 0;

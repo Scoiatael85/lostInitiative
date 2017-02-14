@@ -124,8 +124,48 @@ p {
     .twitchChat {
         padding-bottom: 110vw;
     }
-    @media (min-width: 350px) {
-        .contactInfo {
-            font-size: 1.1em;
-        }
+/*@media (orientation: landscape) {
+    .contactme {
+        height: 100%;
     }
+}*/
+@media (max-width: 450px) and (orientation: portrait) {
+    .contactme {
+        height: 250px;
+    }
+}
+@media (min-width: 350px) {
+    .contactInfo {
+        font-size: 1.1em;
+    }
+}
+@media (max-width: 350px) {
+    .icons {
+        width: 110%;
+    }
+}
+#mathasLinks, #daelricLinks {
+    padding-top: 10%;
+}
+
+    .webLinks {
+    padding-bottom: 28%;
+    }
+
+@media (orientation: portrait) {
+    #mathasLinks, #daelricLinks {
+    padding-bottom: 80%;
+}
+@media (min-width: 360px) and (orientation: portrait) {
+    #mathasLinks, #daelricLinks {
+    padding-bottom: 68%;
+}
+@media (min-width: 400px) and (orientation: portrait) {
+    #mathasLinks, #daelricLinks {
+    padding-bottom: 60%;
+}
+
+
+.linksTitle {
+    top: -50px;
+}
