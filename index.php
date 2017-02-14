@@ -74,14 +74,14 @@
             <div class="twitch">
               <iframe
                 id="live_embed_player_flash" class="center-block" 
-                src="http://player.twitch.tv/?channel=lostinitiativeshow&autoplay=true"
+                src="https://player.twitch.tv/?channel=lostinitiativeshow&autoplay=true"
                 frameborder="<frameborder>" scrolling="no" allowfullscreen="true">
                     </iframe>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="twitch twitchChat">
-                    <iframe frameborder="0" scrolling="no" src="http://twitch.tv/lostinitiativeshow/chat?popout=" id="chat">
+                    <iframe frameborder="0" scrolling="no" src="https://twitch.tv/lostinitiativeshow/chat?popout=" id="chat">
                     </iframe>
                 </div>
             </div>
