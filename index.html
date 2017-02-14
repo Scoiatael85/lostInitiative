@@ -93,7 +93,7 @@
     <div id="feed" class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <img class="banner bannerDesk" src="img/min/bannerSocial.png">
+                <img class="banner bannerDesk" src="img/min/bannersocial.png">
             </div>
             </br>
             <div id="twitterBox" class="box feedCenter center-block col-md-4 col-sm-4 col-xs-10">
