@@ -221,6 +221,9 @@ a:hover {
 .TweetAuthor-name {
     color: gold;
 }
+.timeline-Viewport {
+    -webkit-overflow-scrolling: touch;
+}
 /*footer styles*/
 
 .contactme {
