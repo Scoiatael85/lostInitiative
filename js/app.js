@@ -1,5 +1,17 @@
 var game = {
     "playersEOM": [{
+            pc: "@Daelric",
+            name: "Scott",
+            profilePic: "img/min/daelric.png",
+            twitter: "https://twitter.com/Daelric",
+            charNickname: "DM",
+            charName: "Dungeon Master",
+            charImg: "img/min/daelricDM.png",
+            charRace: "",
+            charClass: "",
+            id: "EOM0"
+        },
+        {
             pc: "@BaerTaffy",
             name: "Baer",
             profilePic: "img/min/BaerTaffy.png",
@@ -9,7 +21,7 @@ var game = {
             charImg: "img/min/Ado.png",
             charRace: "Halfling",
             charClass: "Bard",
-            id: "EOM0"
+            id: "EOM1"
         },
         {
             pc: "@Strippin",
@@ -21,7 +33,7 @@ var game = {
             charImg: "img/min/Rye.png",
             charRace: "Tiefling",
             charClass: "Warlock",
-            id: "EOM1"
+            id: "EOM2"
         },
         {
             pc: "@MargaretKrohn",
@@ -33,7 +45,7 @@ var game = {
             charImg: "img/min/Gromon.png",
             charRace: "Half-orc",
             charClass: "Barbarian",
-            id: "EOM2"
+            id: "EOM3"
         },
         {
             pc: "@MathasGames",
@@ -45,10 +57,23 @@ var game = {
             charImg: "img/min/Thonk.png",
             charRace: "Half-orc",
             charClass: "Cleric",
-            id: "EOM3"
+            id: "EOM4"
         }
     ],
     "playersTF": [{
+            pc: "@Daelric",
+            name: "Scott",
+            profilePic: "img/min/daelric.png",
+            twitter: "https://twitter.com/Daelric",
+            charNickname: "DM",
+            charName: "Gamemaster",
+            charImg: "img/min/sithDaelric.png",
+            charRace: "",
+            charClass: "",
+            charTree: "",
+            id: "TF0"
+        },
+        {
             pc: "@MargaretKrohn",
             name: "Maggie",
             profilePic: "img/min/MargaretKrohn.jpg",
@@ -59,7 +84,7 @@ var game = {
             charRace: "Bothan",
             charClass: "Colonist",
             charTree: "Politico",
-            id: "TF0"
+            id: "TF1"
         },
         {
             pc: "@JesseCox",
@@ -72,7 +97,7 @@ var game = {
             charRace: "Wookiee",
             charClass: "Hired Gun",
             charTree: "Mercenary",
-            id: "TF1"
+            id: "TF2"
         },
         {
             pc: "@crendor",
@@ -85,7 +110,7 @@ var game = {
             charRace: "B-1 Battle Droid",
             charClass: "Bounty Hunter",
             charTree: "Assassian",
-            id: "TF2"
+            id: "TF3"
         },
         {
             pc: "@MathasGames",
@@ -98,7 +123,7 @@ var game = {
             charRace: "Human",
             charClass: "Technician",
             charTree: "Mechanic",
-            id: "TF3"
+            id: "TF4"
         }
     ]
 };
@@ -109,8 +134,8 @@ var daelricTwitter = '<div class="feedButton"><a href="https://twitter.com/inten
 $(document).ready(function() {
     var game1Wheel = $('#game1Wheel');
     var game2Wheel = $('#game2Wheel');
-    var EOMindicators = '<ol class="carousel-indicators"><li class="EOM0 active"></li><li class="EOM1"></li><li class="EOM2"></li><li class="EOM3"></li></ol>';
-    var TFindicators = '<ol class="carousel-indicators"><li class="TF0 active"></li><li class="TF1"></li><li class="TF2"></li><li class="TF3"></li></ol>';
+    var EOMindicators = '<ol class="carousel-indicators"><li class="EOM0 active"></li><li class="EOM1"></li><li class="EOM2"></li><li class="EOM3"></li><li class="EOM4"></li></ol>';
+    var TFindicators = '<ol class="carousel-indicators"><li class="TF0 active"></li><li class="TF1"></li><li class="TF2"></li><li class="TF3"></li><li class="TF4"></li></ol>';
     var game1Meat = $('#game1Inner');
     var game2Meat = $('#game2Inner');
 
@@ -135,7 +160,7 @@ $(document).ready(function() {
             '</p><p><span>Class:</span> ' + game.playersTF[i].charClass + '</p><p><span>Spec:</span> ' + game.playersTF[i].charTree + '</p></div></div>'
         game2Meat.append(wheel2Item);
     };
-
+    $('#EOM0, #TF0').find('span').hide();
     $('#EOM0').addClass('active');
     $('#TF0').addClass('active');
     // Activate Carousel
@@ -209,7 +234,7 @@ $('#mathasHead').click(function() {
     $('#liLinks').hide();
     $('#twitterBox, #redditBox').hide();
     $('#daelricLinks').hide();
-    $('.scottBox').hide();
+    $('.daelricBox').hide();
     if ($('#mathasLinks').css('display') == 'none') {
      $('#liLinks').toggle();
      $('#twitterBox, #redditBox').toggle();
@@ -221,10 +246,17 @@ $('#mathasHead').click(function() {
 
 $('#scottHead').click(function() {
     $('#daelricLinks').toggle();
+    $('.daelricBox').toggle();
     $('#liLinks').hide();
+    $('#twitterBox, #redditBox').hide();
     $('#mathasLinks').hide();
+    $('.mathasBox').hide();
     if ($('#daelricLinks').css('display') == 'none') {
      $('#liLinks').toggle();
+     $('#twitterBox, #redditBox').toggle();
+    }
+    if ($('#daelricTwitter').html().length == 0) {
+        $('#daelricTwitter').append(daelricTwitter);
     }
 })
 

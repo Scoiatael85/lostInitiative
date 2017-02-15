@@ -3,6 +3,9 @@
 body {
     background: url("../img/stone2-min.jpg");
 }
+h1, h2, h3, h4, h5, p, ul, li {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 h3 {
     color: #960303;
     font-family: 'Permanent Marker', cursive;
@@ -58,7 +61,6 @@ a:hover {
     position: absolute;
     top: 55px;
     font-size: 20px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     display: none;
 }
 .mover {
@@ -92,9 +94,6 @@ a:hover {
 }
 .PC {
     max-width: 80%;
-}
-#players {
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .feed {
     overflow-y: scroll;
@@ -277,7 +276,7 @@ a:hover {
 #scottHead, #mathasHead {
     z-index: 10;
 }
-#mathasLinks, #daelricLinks, .mathasBox, .scottBox {
+#mathasLinks, #daelricLinks, .mathasBox, .daelricBox {
     background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
     repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
     repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
@@ -316,18 +315,27 @@ a:hover {
     padding-bottom: 13%;
     }
 }
-#daelricLinks, .scottBox {
+#daelricLinks, .daelricBox {
     background-color: rgba(70,0,130,.6);
 }
 #mathasLinks, .mathasBox {
     background-color: rgba(139,0,0,.6)
+}
+.mathasBox h3 {
+    color: gold;
+}
+.mathasBox p {
+    color: #CCD6DD;
+}
+.aboutMe {
+    padding: 10%;
+
 }
 .linksTitle {
     position: relative;
     top: -25px;
     font-size: 16px;
     margin-bottom: 0;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 @media (min-width: 350px) {
     .linksTitle {
