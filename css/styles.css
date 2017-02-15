@@ -358,7 +358,8 @@ a:hover {
     color: #CCD6DD;
 }
 .aboutMe {
-    padding: 0 10% 10% 10%;
+    padding: 0 10% 5% 10%;
+    font-size: 14px;
 
 }
 .linksTitle {
