@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Righteous" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-min.css">
-    <link rel="stylesheet" media='(max-device-width: 767px), (max-width: 767px)' href="css/mobile-min.css">
+    <link rel="stylesheet" media='(max-device-width: 767px)' href="css/mobile-min.css">
 
     <style>
 

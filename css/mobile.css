@@ -58,13 +58,6 @@ p {
 .box {
     height: 515px;
 }
-#players .box {
-    margin: 0;
-}
-.PC {
-    max-width: 60%;
-    max-height: 160px;
-}
 .feedCenter {
     padding-bottom: 5.5em;
 }

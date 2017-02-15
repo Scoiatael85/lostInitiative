@@ -77,6 +77,11 @@ a:hover {
     padding: 0;
     height: 400px;
 }
+@media (max-width: 767px) {
+    #players .box {
+    margin: 0;
+    }
+}
 .showBox {
     opacity: 0.6;
     width: 100%;
@@ -93,7 +98,24 @@ a:hover {
     background-size: cover;
 }
 .PC {
-    max-width: 80%;
+    max-width: 60%;
+    max-height: 160px;
+}
+@media (min-width: 768px) {
+    .PC {
+        max-width: 80%;
+    }
+}
+.item p {
+    font-size: 11.5px;
+}
+@media (min-width: 992px) {
+    .item p {
+    font-size: 14px;
+    }
+}
+.item p a {
+    font-size: 15px;
 }
 .feed {
     overflow-y: scroll;
