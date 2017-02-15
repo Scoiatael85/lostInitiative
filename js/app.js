@@ -165,7 +165,7 @@ $(document).ready(function() {
     $('#TF0').addClass('active');
     // Activate Carousel
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2250
     });
 
     // Enable Carousel EoM Indicators

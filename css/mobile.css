@@ -124,11 +124,6 @@ p {
     .twitchChat {
         padding-bottom: 110vw;
     }
-/*@media (orientation: landscape) {
-    .contactme {
-        height: 100%;
-    }
-}*/
 @media (max-width: 450px) and (orientation: portrait) {
     .contactme {
         height: 250px;

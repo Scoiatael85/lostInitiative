@@ -239,6 +239,11 @@ a:hover {
     float: left;
     font-size: 1.5em;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    .contactInfo {
+        font-size: 1.2em;
+    }
+}
 .floatbox {
     margin: auto;
     display: block;
@@ -285,6 +290,9 @@ a:hover {
 #mathasLinks, #daelricLinks {
     padding-bottom: 28%;
 }
+.mathasBox, .daelricBox {
+    overflow-y: scroll;
+}
 @media (min-width: 600px) {
     #mathasLinks, #daelricLinks {
     padding-bottom: 24%;
@@ -319,7 +327,7 @@ a:hover {
     background-color: rgba(70,0,130,.6);
 }
 #mathasLinks, .mathasBox {
-    background-color: rgba(139,0,0,.6)
+    background-color: rgba(139,0,0,.6);
 }
 .mathasBox h3 {
     color: gold;
@@ -328,7 +336,7 @@ a:hover {
     color: #CCD6DD;
 }
 .aboutMe {
-    padding: 10%;
+    padding: 0 10% 10% 10%;
 
 }
 .linksTitle {
