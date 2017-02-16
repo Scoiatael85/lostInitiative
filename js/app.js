@@ -181,6 +181,9 @@ $(document).ready(function() {
     $(".EOM3").click(function() {
         $("#game1Wheel").carousel(3);
     });
+    $(".EOM4").click(function() {
+        $("#game1Wheel").carousel(4);
+    });
 
     // Enable Carousel tF Indicators
     $(".TF0").click(function() {
@@ -194,6 +197,9 @@ $(document).ready(function() {
     });
     $(".TF3").click(function() {
         $("#game2Wheel").carousel(3);
+    });
+    $(".TF4").click(function() {
+        $("#game2Wheel").carousel(4);
     });
 });
 $('.reddit-header').children('h4').html('');
