@@ -118,7 +118,7 @@ var game = {
             profilePic: "img/min/MathasGames.jpg",
             twitter: "https://twitter.com/MathasGames",
             charNickname: "Fitz",
-            charName: "Thonk",
+            charName: "Fitz Tolen",
             charImg: "img/min/Fitz.png",
             charRace: "Human",
             charClass: "Technician",
