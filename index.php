@@ -176,7 +176,7 @@
                 <div class="contactInfo col-md-3 col-sm-3 col-xs-6">
                     <div class="floatbox">
                         <img class="otherLinks" src="img/min/gmail.png">
-                        <a href="mailto:Mathasgames@gmail.com">Email Us</a>
+                        <a href="mailto:Mathasgames@gmail.com">Email Me</a>
                     </div>
               </div>
                 <div class="social col-md-5 col-sm-5 col-xs-6">
@@ -197,7 +197,7 @@
                 <div class="contactInfo col-md-3 col-sm-3 col-xs-6">
                     <div class="floatbox">
                         <img class="otherLinks" src="img/min/gmail.png">
-                        <a href="mailto:Daelric.Master@gmail.com">Email Us</a>
+                        <a href="mailto:Daelric.Master@gmail.com">Email Me</a>
                     </div>
               </div>
                 <div class="social col-md-5 col-sm-5 col-xs-6">
