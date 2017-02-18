@@ -128,8 +128,8 @@ var game = {
     ]
 };
 
-var mathasTwitter = '<div class="feedButton"><a href="https://twitter.com/intent/tweet?text=@MathasGames" class="twitter-share-button"></a><a href="https://twitter.com/MathasGames" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false"></a></div><div id="feedTwitter" class="feed"><a class="twitter-timeline" href="https://twitter.com/MathasGames" data-theme="dark" data-show-replies="true" data-link-color="#FFD700" data-chrome="noheader nofooter noborders transparent">Tweets by MathasGames</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>';
-var daelricTwitter = '<div class="feedButton"><a href="https://twitter.com/intent/tweet?text=@daelric" class="twitter-share-button"></a><a href="https://twitter.com/daelric" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false"></a></div><div id="feedTwitter" class="feed"><a class="twitter-timeline" href="https://twitter.com/daelric" data-theme="dark" data-show-replies="true" data-link-color="#FFD700" data-chrome="noheader nofooter noborders transparent">Tweets by Daelric</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>';
+var mathasTwitter = '<div class="feedButton"><a href="https://twitter.com/intent/tweet?text=@MathasGames" class="twitter-share-button"></a><a href="https://twitter.com/MathasGames" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false"></a></div><div id="feedTwitter" class="h100 flowyScroll"><a class="twitter-timeline" href="https://twitter.com/MathasGames" data-theme="dark" data-show-replies="true" data-link-color="#FFD700" data-chrome="noheader nofooter noborders transparent">Tweets by MathasGames</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>';
+var daelricTwitter = '<div class="feedButton"><a href="https://twitter.com/intent/tweet?text=@daelric" class="twitter-share-button"></a><a href="https://twitter.com/daelric" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false"></a></div><div id="feedTwitter" class="h100 flowyScroll"><a class="twitter-timeline" href="https://twitter.com/daelric" data-theme="dark" data-show-replies="true" data-link-color="#FFD700" data-chrome="noheader nofooter noborders transparent">Tweets by Daelric</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>';
 
 $(document).ready(function() {
     var game1Wheel = $('#game1Wheel');
@@ -229,15 +229,10 @@ $('#bannerReddit').click(function() {
            }
 });
 $('#mathasHead').click(function() {
-    $('#mathasLinks').toggle();
     $('.mathasBox').toggle();
-    $('#liLinks').hide();
-    $('#twitterBox, #redditBox').hide();
-    $('#daelricLinks').hide();
-    $('.daelricBox').hide();
-    if ($('#mathasLinks').css('display') == 'none') {
-     $('#liLinks').toggle();
-     $('#twitterBox, #redditBox').toggle();
+    $('.stateLI, .daelricBox').hide();
+    if ($('.mathasBox').css('display') == 'none') {
+     $('.stateLI').toggle();
     }
     if ($('#mathasTwitter').html().length == 0) {
         $('#mathasTwitter').append(mathasTwitter);
@@ -245,15 +240,10 @@ $('#mathasHead').click(function() {
 })
 
 $('#scottHead').click(function() {
-    $('#daelricLinks').toggle();
     $('.daelricBox').toggle();
-    $('#liLinks').hide();
-    $('#twitterBox, #redditBox').hide();
-    $('#mathasLinks').hide();
-    $('.mathasBox').hide();
-    if ($('#daelricLinks').css('display') == 'none') {
-     $('#liLinks').toggle();
-     $('#twitterBox, #redditBox').toggle();
+    $('.stateLI, .mathasBox').hide();
+    if ($('.daelricBox').css('display') == 'none') {
+     $('.stateLI').toggle();
     }
     if ($('#daelricTwitter').html().length == 0) {
         $('#daelricTwitter').append(daelricTwitter);
