@@ -63,7 +63,7 @@
       </div>
     </div>
 
-<!--     <hr>
+    <hr>
     <div id="twitch" class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -88,7 +88,7 @@
 
         </div>
     </div>
-    <hr> -->
+    <hr>
 
     <div id="feed" class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -130,9 +130,9 @@
 
             <div class="box feedCenter center-block col-md-4 col-sm-4 col-xs-10 mathasBox text-center flowyScroll">
                 <h3>About Mathas</h3>
-                    <p class="aboutMe">I tried D&amp;D a few times growing up, mostly in my mid-teens. It was fun, but it never really stuck for me. I've always thought the game was a bit goofy and uncontrolled. When I was about 17 years old, I got around to playing in one of Scott's games for the first time. It was then I realized how much fun the game really could be. What I enjoy best in a story is to see it develop in a 'real world'. I love making characters with basic backstories, and watching them evolve over time.</p>
-                    <p class="aboutMe">I've been wanting to start a ttRPG show for some time. Now that it's here I'm just excited to see what happens.</p>
-                    <p class="aboutMe">Thank you to everyone who supports us and makes this possible!</p>                
+                    <p>I tried D&amp;D a few times growing up, mostly in my mid-teens. It was fun, but it never really stuck for me. I've always thought the game was a bit goofy and uncontrolled. When I was about 17 years old, I got around to playing in one of Scott's games for the first time. It was then I realized how much fun the game really could be. What I enjoy best in a story is to see it develop in a 'real world'. I love making characters with basic backstories, and watching them evolve over time.</p>
+                    <p>I've been wanting to start a ttRPG show for some time. Now that it's here I'm just excited to see what happens.</p>
+                    <p>Thank you to everyone who supports us and makes this possible!</p>                
             </div> 
             <div class="box feedCenter center-block col-md-4 col-sm-4 col-xs-10 daelricBox text-center flowyScroll">
                 <h3>About Daelric</h3>
