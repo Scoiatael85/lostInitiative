@@ -158,7 +158,9 @@
                 </div>
                 <div class="contactInfo col-md-3 col-sm-3 col-xs-6">
                     <div class="floatbox">
-                        <img class="otherLinks" src="img/min/gmail.png">
+                        <a href="mailto:LostInitiativeShow@gmail.com">
+                            <img class="otherLinks" src="img/min/gmail.png">
+                        </a>
                         <a href="mailto:LostInitiativeShow@gmail.com">Email Us</a>
                     </div>
               </div>
@@ -179,7 +181,9 @@
                 </div>
                 <div class="contactInfo col-md-3 col-sm-3 col-xs-6">
                     <div class="floatbox">
-                        <img class="otherLinks" src="img/min/gmail.png">
+                        <a href="mailto:Mathasgames@gmail.com">
+                            <img class="otherLinks" src="img/min/gmail.png">
+                        </a>    
                         <a href="mailto:Mathasgames@gmail.com">Email Me</a>
                     </div>
               </div>
@@ -200,15 +204,17 @@
                 </div>
                 <div class="contactInfo col-md-3 col-sm-3 col-xs-6">
                     <div class="floatbox">
-                        <img class="otherLinks" src="img/min/gmail.png">
+                        <a href="mailto:Daelric.Master@gmail.com">
+                            <img class="otherLinks" src="img/min/gmail.png">
+                        </a>
                         <a href="mailto:Daelric.Master@gmail.com">Email Me</a>
                     </div>
               </div>
                 <div class="social col-md-5 col-sm-5 col-xs-6">
                     <div class="icons">
-                        <a href="https://www.youtube.com/Daelric"><img class="otherLinks" src="img/min/youtube.png" alt="youtube">
+                        <a href="https://www.youtube.com/channel/UC35xPN-JNFk8kr42R3YuJcw"><img class="otherLinks" src="img/min/youtube.png" alt="youtube">
                         </a>
-                        <a href="https://www.twitch.tv/Daelric"><img class="otherLinks" src="img/min/twitch.png" alt="twitch">
+                        <a href="https://www.twitch.tv/DaelricMaster"><img class="otherLinks" src="img/min/twitch.png" alt="twitch">
                         </a>
                         <a href="https://twitter.com/Daelric"><img class="otherLinks" src="img/min/twitter.png" alt="twitter">
                         </a>
