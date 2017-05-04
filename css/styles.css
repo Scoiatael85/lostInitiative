@@ -73,7 +73,7 @@ a:hover {
 /*different boxes and thier filling*/
 
 .box {
-    margin: 4%;
+    margin: 15px;
     padding: 0;
     height: 400px;
 }
@@ -122,10 +122,6 @@ a:hover {
 }
 .flowyScroll {
     overflow-y: scroll;
-}
-.feedCenter {
-    margin-left: 8%;
-    margin-right: 8%;
 }
 .feedButton {
     right: 0;
@@ -332,6 +328,9 @@ a:hover {
 #mathasLinks, #daelricLinks {
     padding-bottom: 28%;
 }
+#show2{
+    float: right;
+}
 @media (min-width: 600px) {
     #mathasLinks, #daelricLinks {
     padding-bottom: 24%;
@@ -377,4 +376,7 @@ a:hover {
     .linksTitle {
         font-size: 22px;    
     }
+}
+#redditBox{
+    float: right;
 }
